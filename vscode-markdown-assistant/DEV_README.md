@@ -1,4 +1,4 @@
-# Developer instructions 
+# Developer instructions
 
 ## Build
 
@@ -18,24 +18,25 @@ In order to build you should have nodejs set up and either npm or yarn installed
 - Once you have a new window, add a project that you want to see the work of extension (in our case any content-repo) and open any file.
 - If you keep any breakpoints,  it will stop based on the condition.
 
-### Create pakcage
+### Create package
 
-To  build a package for your changes - run the below command
+To build a package for your changes - run the below command
 
-```
+```bash
 vsce package
 ```
+
 Note: Please increase the version if this is a new package.
 In order to test, first uninstall your existing code extension and then install this extension.
 
-### How to test without publishing package.
+### How to test without publishing package
 
 To run the above created .vsix, you can run the below command.
 
-```
+```bash
 code --install-extension myextension.vsix
 ```
 
 Example: `code --install-extension ./sfdocs-markdown-assistant-1.0.5.vsix`
 
-If the above command doesn't work, right click the .vsix file in VS Code's Explorer and select _Install Extension VSIX_ .
+If the above command doesn't work, right click the .vsix file in VS Code's Explorer and select _Install Extension VSIX_.

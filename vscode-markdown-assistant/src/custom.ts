@@ -38,3 +38,13 @@ export async function insertDescriptionList() {
     let editor = window.activeTextEditor;
     return editor!.insertSnippet(new SnippetString('\n- First Term\n\n\t- : This text defines the first term.\n'));
 }
+
+export function insertSubscript() {
+    const editor = window.activeTextEditor;
+    return editor!.insertSnippet(new SnippetString(':sub[$1]'));
+}
+
+export function insertSuperscript() {
+    const editor = window.activeTextEditor;
+    return editor!.insertSnippet(new SnippetString(':sup[$1]'));
+}
